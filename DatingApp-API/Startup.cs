@@ -27,6 +27,7 @@ namespace DatingApp.API.csproj
       services.AddControllers();
       services.AddCors();
       services.AddScoped<IAuthRepository, AuthRepository>();
+<<<<<<< HEAD:DatingApp-API/Startup.cs
       services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         .AddJwtBearer(options =>
         {
@@ -39,6 +40,8 @@ namespace DatingApp.API.csproj
             ValidateAudience = false
           };
         });
+=======
+>>>>>>> going on:DatingApp.API.csproj/Startup.cs
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
