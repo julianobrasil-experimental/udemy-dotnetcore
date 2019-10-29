@@ -27,6 +27,7 @@ namespace DatingApp.API.csproj.Controllers
             this._logger = logger;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
@@ -36,10 +37,11 @@ namespace DatingApp.API.csproj.Controllers
 
         [HttpGet("{id}")]
         [AllowAnonymous]
-        public async Task<IActionResult> GetValue(int id) {
-          var value = await this._context.Values.FirstOrDefaultAsync(x => x.Id == id);
+        public async Task<IActionResult> GetValue(int id)
+        {
+            var value = await this._context.Values.FirstOrDefaultAsync(x => x.Id == id);
 
-          return Ok(value);
+            return Ok(value);
         }
     }
 }
