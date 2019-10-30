@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using DatingApp.API.csproj.Models;
+using DatingApp.API.Models;
 
-namespace DatingApp.API.csproj.Data
+namespace DatingApp.API.Data
 {
     public interface IAuthRepository
     {
